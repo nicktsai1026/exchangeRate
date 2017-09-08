@@ -47,14 +47,14 @@ In spec folder, run the following command
 # How to use
 
 1. Latest rate
-    * Select a currency and check.
+    - Select a currency and check.
 
 2. Historical rate
-    * Type a date that you want to search.
-    * Select a currency and check.
+    - Type a date that you want to search.
+    - Select a currency and check.
 3. Chart
-    * Select a period.
-    * Select a currency and check.
+    - Select a period.
+    - Select a currency and check.
 ## Authors
 
 * **Nick Tsai** - (git:nicktsai1026)
