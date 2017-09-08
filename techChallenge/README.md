@@ -44,7 +44,7 @@ In spec folder, run the following command
 6. is-my-date-valid
 7. chart.js
 
-# How to use
+## How to use
 
 1. Latest rate
     - Select a currency and check.
