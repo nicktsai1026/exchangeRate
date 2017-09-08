@@ -1,0 +1,30 @@
+.returnbtn {
+    font-family: Arial;
+    padding: 5px;
+    background: black;
+    border: solid 1px gray;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+}
+.returnbtn:hover {
+    background: white;
+    color: black;
+}
+
+.showPage, .errorPage {
+    text-align: center;
+}
+
+.bigDiv {
+    text-align: center;
+}
+.sub {
+    font-family: Arial;
+    margin: 10px;
+}
+.searchDiv {
+    margin: 10px;
+    height: 300px;
+    border: solid 2px green;
+}

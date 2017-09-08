@@ -1,0 +1,26 @@
+<div>
+    <div style="width:80%;" class="bigDiv col-sm-8 col-sm-offset-1">
+        <h3>{{selectedDate}}</h3>
+        <canvas id="chartjs-0" class="chartjs" width="404" height="202" style="display: block; width: 404px; height: 202px;"></canvas>
+        <p>base : USD</p>
+        <a href="/home"><button class="returnbtn" type="button" name="button">Search Again</button></a>
+    </div>
+</div>
+
+<script>
+    new Chart(document.getElementById("chartjs-0"),
+        {
+            "type": "line",
+            "data":
+            {
+                "labels": [{{#each allDates}}'{{this}}',{{/each}}],
+        "datasets": [{
+            "label": "{{selectedCurrency}}",
+            "data": [{{allRates}}],
+        "fill": false, "borderColor": "rgb(75, 192, 192)",
+        "lineTension": 0.1 }] 
+        },
+        "options": {} 
+    });
+
+</script>

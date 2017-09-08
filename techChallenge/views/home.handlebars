@@ -1,0 +1,78 @@
+<style>
+    h1 {
+        margin: 20px;
+    }
+    .radio {
+        font-size: 20px;
+    }
+</style>
+<div class="bigDiv">
+    <div class="col-sm-6">
+        <div class="searchDiv">
+            <h1>Check latest exchange rate</h1>
+            <form class="txt" action="/latest" method="post">
+                <div>
+                    <h4>Select a currency:</h4>
+                    <select class="input-medium" name="currency" onchange="onCurrencySelectChange();">
+                    {{#showing}}
+                        <option value="{{shortName}}"> {{shortName}} : {{fullName}} </option>
+                    {{/showing}}
+                    </select>
+                </div>
+                <div>
+                    <input class="sub" type="submit" value="Check">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="col-sm-6">
+        <div class="searchDiv">
+            <h1>Check past exchange rate</h1>
+            <form class="txt" action="/historical" method="post">
+                <div>
+                    <h4>Input a date:</h4>
+                    <input type="text" name="date" placeholder="ex:2016-01-09">
+                </div>
+                <div>
+                    <h4>Select a currency:</h4>
+                    <select class="input-medium" name="currency" onchange="onCurrencySelectChange();">
+                    {{#showing}}
+                        <option value="{{shortName}}"> {{shortName}} : {{fullName}} </option>
+                    {{/showing}}
+                    </select>
+                </div>
+                <div>
+                    <input class="sub" type="submit" value="Check">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="col-sm-12">
+        <div class="searchDiv">
+            <h1>See exchange rate chart</h1>
+            <form class="txt" action="/period" method="post">
+            <div class="controls">
+                <label class="radio" title="Latest three months chart" >
+                    <input type="radio" name="search_range" id="ltm" value="84" checked>In the last three months
+                </label>
+                <label class="radio" title="Latest six months chart">
+                    <input type="radio" name="search_range" id="l6m" value="168">In the last six months
+                </label>
+            </div>
+                <div>
+                    <h4>Select a currency:</h4>
+                    <select class="input-medium" name="currency" >
+                    {{#showing}}
+                        <option value="{{shortName}}"> {{shortName}} : {{fullName}} </option>
+                    {{/showing}}
+                    </select>
+                </div>
+                <div>
+                    <input class="sub" type="submit" value="Check">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

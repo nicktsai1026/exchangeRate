@@ -1,0 +1,19 @@
+<div class="showPage">
+    <div>
+        {{#show}}
+        <h3> 1 USD = {{rate}} {{shortName}} </h3>
+        {{/show}}
+    </div>
+
+    <div>
+        {{#historicalCurrency}}
+        <h3>{{date}}</h3>
+        <h3> 1 USD = {{rate}} {{shortName}} </h3>
+        {{/historicalCurrency}}
+    </div>
+
+    <a href="/home"><button class="returnbtn" type="button" name="button">Search Again</button></a>
+</div>
+
+
+
