@@ -1,4 +1,4 @@
-# Project Title
+# Exchange Rate
 
 Quick check the current currency rate and historical date currency rate. It also provides a period time and show up with a chart.
 
