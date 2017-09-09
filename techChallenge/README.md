@@ -1,14 +1,13 @@
 # Exchange Rate
 
-Quick check the current currency rate and historical date currency rate. It also provides a period time and show up with a chart.
+Website providing quick check of the current and past currency rates, and charts of past rates.
+* Link:[exchangeRate](http://128.199.115.203:8080/home)
 
 ## Getting Started
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Follow the instructions to get a copy of the project and run it on your local machine for development on a live system.
 
-### Prerequisites
-
-What things you need to install the software and how to install them
+### Install Node.js
 
 Node.js
 Run the following commands to add the NodeSource repository to your server.
@@ -19,9 +18,8 @@ Run the following commands to add the NodeSource repository to your server.
      sudo apt-get install -y nodejs
      sudo apt-get install -y build-essential
 ```
-### Installing
+### Install node packages
 
-Install packages,
 Run the following command
 ```
     npm install
@@ -34,7 +32,7 @@ In spec folder, run the following command
     jasmine <file_name>.spec.js
 ```
 
-## Built With
+## Libraries used
 
 1. express
 2. body-parser
@@ -44,18 +42,19 @@ In spec folder, run the following command
 6. is-my-date-valid
 7. chart.js
 
-## How to use
+# How to use the website
 
-1. Latest rate
-    - Select a currency and check.
+1. To check the latest rate
+    * Select a currency and click check.
 
-2. Historical rate
-    - Type a date that you want to search.
-    - Select a currency and check.
-3. Chart
-    - Select a period.
-    - Select a currency and check.
-## Authors
+2. To check past rates
+    * Type in a date that you want to search.
+    * Select a currency and click check.
+3. To see a chart
+    - Select a period of time.
+    - Select a currency and click check.
+
+## Author
 
 * **Nick Tsai** - (git:nicktsai1026)
 
